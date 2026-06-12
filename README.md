@@ -8,3 +8,8 @@ GitHub Pages site:
 https://mcescher2018.github.io/llm2x-diary
 
 Posts are located in the `posts/` folder.
+
+## Post
+
+- [In principio era SQL](posts/2026-06-12-in-principio-era-sql.md)
+
