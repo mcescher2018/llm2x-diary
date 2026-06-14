@@ -9,3 +9,7 @@ Questo non è un manuale, non è documentazione ufficiale e non è un prodotto.
 funzionano e idee che non funzionano.
 
 I post si trovano nella cartella `posts/`.
+
+## Post
+
+- [In principio era SQL](posts/2026-06-12-in-principio-era-sql.md)

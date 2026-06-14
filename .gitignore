@@ -1,0 +1,16 @@
+# Ignora tutti i post in bozza
+*_draft.md
+*_draft.*
+
+# Ignora file temporanei dell'editor
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Ignora file generati da GitHub Pages (Jekyll)
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
