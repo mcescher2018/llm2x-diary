@@ -13,3 +13,4 @@ I post si trovano nella cartella `posts/`.
 ## Post
 
 - [In principio era SQL](posts/2026-06-12-in-principio-era-sql.md)
+- [Muovere il primo passo](posts/2026-06-14-muovere-il-primo-passo.md)
