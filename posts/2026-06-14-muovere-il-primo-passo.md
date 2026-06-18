@@ -59,4 +59,4 @@ Confesso di essermi emozionato.
 
 ---
 
-[← Torna all’Index](../index.md) · [Post successivo →](2026-06-20-il-genio-della-lampada_draft.md)
+[← Torna all’Index](../index.md) · [Post successivo →](2026-06-18-il-genio-della-lampada.md)
