@@ -57,3 +57,6 @@ Ho installato Ollama, attivato il modello llama3.1:8b e ottenuto una risposta al
 
 Confesso di essermi emozionato.
 
+---
+
+[← Torna all’Index](../index.md) · [Post successivo →](2026-06-20-il-genio-della-lampada_draft.md)

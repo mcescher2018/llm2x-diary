@@ -16,3 +16,7 @@ Fare la figura del coglione non piace a nessuno, e mi rendevo conto che se volev
 Da zero… beh, capiamoci.
 
 Alla prossima.
+
+---
+
+[Post successivo →](2026-06-14-muovere-il-primo-passo.md)
