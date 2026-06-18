@@ -1,4 +1,8 @@
-# Muovere il primo passo
+---
+layout: post
+title: "Muovere il primo passo"
+nav_exclude: true
+---
 
 Ne *Il Ritorno di Endymion*, il capitolo finale del grandissimo ciclo di Hyperion di Dan Simmons, Colei‑Che‑Insegna dice, a proposito del come accedere al Vuoto‑Che‑Lega, questa frase criptica: “Il primo passo è… muovere il primo passo”.
 
