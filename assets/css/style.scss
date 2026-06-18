@@ -1,4 +1,7 @@
-/* Riduce font e spaziatura dei code block */
+---
+---
+
+/* Override per code block */
 pre, code {
   font-size: 0.85rem !important;
   line-height: 1.3 !important;
@@ -8,3 +11,4 @@ pre {
   padding: 0.6rem !important;
   margin: 1rem 0 !important;
 }
+
