@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "In principio era SQL"
-nav_exclude: true
 ---
 
 Questo che sto scrivendo è una sorta di diario di un percorso di auto‑apprendimento sul tema LLM + Dati, o meglio LLM + Database.  

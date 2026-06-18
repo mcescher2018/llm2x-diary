@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Il genio della lampada"
-nav_exclude: true
 ---
 
 Ok, muovere il primo passo; ma, diciamola come si deve, da solo non ce l’avrei mai fatta.

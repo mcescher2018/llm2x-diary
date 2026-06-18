@@ -1,6 +1,6 @@
 title: LLM2X-Diary
 description: Diario tecnico dedicato alle pipeline LLM-to-X.
 show_downloads: false
-theme: jekyll-theme-primer
+theme: minima
 github:
   is_project_page: false
