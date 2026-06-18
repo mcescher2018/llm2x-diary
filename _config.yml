@@ -4,3 +4,7 @@ show_downloads: false
 theme: minima
 github:
   is_project_page: false
+sass:
+  style: compressed
+include:
+  - assets
