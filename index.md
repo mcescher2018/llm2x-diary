@@ -1,4 +1,4 @@
-# LLM2X Diary
+# Generalità
 
 Diario tecnico dedicato alle pipeline LLM‑to‑X, partendo da LLM2SQL.  
 Una raccolta di appunti, esperimenti, trade‑off, errori e lesson learned emersi lavorando su architetture deterministiche basate su LLM.
