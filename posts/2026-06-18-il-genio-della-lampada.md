@@ -5,27 +5,25 @@ title: "Il genio della lampada"
 
 Ok, muovere il primo passo; ma, diciamola come si deve, da solo non ce l’avrei mai fatta.
 
-Perché installare va bene, sviluppare in C# sotto Windows o scripting SQL ok, ma qui c’era da scrivere parecchio codice per Linux, creando un software non proprio banale.
+Perché, appunto, il tema LLM2SQL lo stavo scoprendo e le mie idee erano poche e confuse, sia su aspetti macro che su molti dettagli.
 
-La prima scelta per il linguaggio di sviluppo era caduta su Python, perché l’avevo usato in accoppiata con Jupyter Notebook per competizioni‑gioco su Kaggle o per qualche lavoro sui dati.
+Ad esempio, la prima scelta per il linguaggio di sviluppo era caduta su Python, perché l’avevo usato in accoppiata con Jupyter Notebook per competizioni‑gioco su Kaggle o per qualche lavoro sui dati.
 
-Avrò scelto i package o le configurazioni sbagliate, ma il dialogo con l’LLM non andava come speravo, con errori strani che spuntavano da tutte le parti.  
+Avrò scelto i package o le configurazioni sbagliate, ma il dialogo con l’LLM non andava come speravo, con errori strani che spuntavano da tutte le parti, soprattutto quando ho provato a introdurre la parte MCP.
 
-Quindi ho fatto quello che fanno tutti: ho sfregato la lampada magica e ho chiesto aiuto al buon Copilot.
+Quindi ho fatto una cosa non proprio originale: ho sfregato la lampada magica e ho chiesto aiuto al buon Copilot, trovando lì un sostegno che mi avrebbe accompagnato in tutto il percorso.
 
-La decisione è stata dunque: via Python, dentro Node.js per la parte backend.
+Ma qui devo fermarmi un attimo e dirti una cosa chiara: *occhio!*
 
-Ormai posso dire di leggere bene i sorgenti del progetto, ma al tempo per me JavaScript era un ricordo confuso, legato al codice che serviva per far cadere la neve nei post intranet nei giorni vicino a Natale.
+Perché lo stesso genio che in certi passaggi attraversa per te le rapide o ti porta lo zaino in marce noiose e lunghissime è anche quello che, dopo che sei caduto in una buca, si mette a sghignazzare e ti chiede: “Ma come hai fatto a finire lì?”. Il primo esempio che mi viene in mente è stato con la chimera del voler realizzare SQL arbitrario in maniera automatica, ma potrei citarne tante altre.
 
-Perché il punto è che io non sono e non sono mai stato un puro dev, ma più un jolly che si muove fra ETL, applicazioni console e web API; magari con logica di elaborazione molto complessa ma con componente frontend assai ridotta.
+La questione del vibe coding è molto di moda di questi tempi. Io non mi riconosco né in quelli che partono con indignazione e anatemi se tutto il codice che consegni non è stato scritto da zero, magari con la penna stilografica. Ma nemmeno in quelli che si trasformano in ninja del copia/incolla, fanno fare tutto all’IA e si sentono dei gran programmatori. Almeno fino a quando non arrivano le urla dei clienti.
 
-Quindi capirete che il passo per me non era banale, e lo è stato ancora meno quando si è trattato di introdurre React per la UI.
+Copilot, ChatGPT, Gemini, Claude… chiamali come vuoi: sono un aiuto enorme, anche nelle versioni gratuite. Chi ha copiato dai testi cartacei o dai post di Stack Overflow anche solo una ricerca logaritmica lo capirà benissimo.
 
-Rincaro la dose: non avevo la più pallida idea di come strutturare, proprio come architettura, un sistema che ricavasse da un DB le risposte a domande scritte nella casella di testo di una pagina web e analizzate da un modello linguistico.
+Ma non fanno magie oltre un certo livello, come in Dungeons & Dragons quando a un anello dei desideri non potevi chiedere di aggiungere altri desideri.
 
-Quindi lo dico una volta per tutte: senza l’aiuto — soprattutto di coding, ma in parte anche di architecture — del "genio", non avrei mai potuto realizzare LLMSQLPROD.
-
-Anche se credo che questo progetto sia andato ben oltre il Vibe Coding, per ragioni che spero emergeranno nei prossimi post.
+Sarebbe troppo facile. E forse neppure divertente.
 
 ---
 

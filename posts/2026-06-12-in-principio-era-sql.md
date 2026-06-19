@@ -3,7 +3,7 @@ layout: post
 title: "In principio era SQL"
 ---
 
-Questo che sto scrivendo è una sorta di diario di un percorso di auto‑apprendimento sul tema LLM + Dati, o meglio LLM + Database.  
+Questo che sto scrivendo è una sorta di diario di un percorso di auto‑apprendimento sul tema LLM + Dati.  
 Mi sono sempre occupato di dati e database: SQL, viste, ETL, batch di integrazione fra dipartimentali diversi.
 
 Gli LLM? Mi hanno colpito in faccia come una secchiata d’acqua fredda qualche anno fa, come è successo a molti, credo. Degli amici mi mostrarono ChatGPT e gli chiesi cosa ne pensava della flat tax, uno degli argomenti del momento. La risposta era talmente completa e naturale che pensai: “non è possibile, questo è il solito gioco del mechanical turk”.
