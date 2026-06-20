@@ -6,3 +6,7 @@ The posts are written in Italian.
 
 GitHub Pages site:
 https://mcescher2018.github.io/llm2x-diary
+
+Other projects and repositories by Ludovico Ristori are available here:
+https://github.com/mcescher2018
+

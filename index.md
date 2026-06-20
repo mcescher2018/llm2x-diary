@@ -13,10 +13,11 @@ Questo non è un manuale, non è documentazione ufficiale e non è un prodotto.
 
 Il progetto principale a cui questo diario si riferisce è [LLMSQLPROD](https://github.com/mcescher2018/LLMSQLPROD).
 
-Git Hub personale [github.com/mcescher2018](https://github.com/mcescher2018).
+Git Hub personale [MCEscher2018](https://github.com/mcescher2018).
 
 ## Post
 
 - [In principio era SQL](posts/2026-06-12-in-principio-era-sql.md)
 - [Muovere il primo passo](posts/2026-06-14-muovere-il-primo-passo.md)
 - [Il genio della lampada](posts/2026-06-18-il-genio-della-lampada.md)
+- [L'ombelico del mondo](posts/2026-06-20-ombelico-del-mondo.md)

@@ -22,4 +22,4 @@ Alla prossima.
 
 ---
 
-[Post successivo →](2026-06-14-muovere-il-primo-passo.md)
+[← Torna all’Index](../index.md) · [Post successivo →](2026-06-14-muovere-il-primo-passo.md)
