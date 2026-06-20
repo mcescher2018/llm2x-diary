@@ -3,7 +3,7 @@
 A questo punto, probabilmente l’avrete capito: il mio modo di vedere è DB‑centrico.
 
 Spesso non afferro davvero il succo di un software dai diagrammi di flusso o dalle maschere, ma dalle tabelle.  
-Il modello relazionale ha per me un’eleganza e una potenza ineguagliabili, qualunque cosa di diverso possa dire la moda del momento.
+Il modello relazionale ha per me un’eleganza e una potenza ineguagliabili, qualunque cosa di diverso possa dire la narrazione del momento.
 
 In ogni caso, qui si trattava di sviluppare un’applicazione che arrivasse a operare con un database. Quindi un DB bisognava costruirlo, anche se solo a scopo dimostrativo.
 
