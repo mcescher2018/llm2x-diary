@@ -1,4 +1,7 @@
-# L'ombelico del mondo
+---
+layout: post
+title: "L'ombelico del mondo"
+---
 
 A questo punto, probabilmente l’avrete capito: il mio modo di vedere è DB‑centrico.
 
