@@ -51,4 +51,4 @@ Ed è lì che le cose sono diventate davvero interessanti.
 
 ---
 
-[← Torna all’Index](../index.md) · Post successivo → *in lavorazione*
+[← Torna all’Index](../index.md) · [Post successivo →](2026-06-26-prima-iterazione.md)

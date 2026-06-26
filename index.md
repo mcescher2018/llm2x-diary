@@ -21,3 +21,4 @@ Git Hub personale [MCEscher2018](https://github.com/mcescher2018).
 - [Muovere il primo passo](posts/2026-06-14-muovere-il-primo-passo.md)
 - [Il genio della lampada](posts/2026-06-18-il-genio-della-lampada.md)
 - [L'ombelico del mondo](posts/2026-06-20-ombelico-del-mondo.md)
+- [Prima iterazione](posts/2026-06-26-prima-iterazione.md)
