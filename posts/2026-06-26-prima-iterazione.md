@@ -79,4 +79,4 @@ Poco? Forse. Ma avrei capito solo dopo quanto il piccolo fosse bello.
 
 ---
 
-[← Torna all’Index](../index.md) · Post successivo → *in lavorazione*
+[← Torna all’Index](../index.md) · [Post successivo →](2026-06-27-piccolo-è-bello.md)

@@ -22,3 +22,4 @@ Git Hub personale [MCEscher2018](https://github.com/mcescher2018).
 - [Il genio della lampada](posts/2026-06-18-il-genio-della-lampada.md)
 - [L'ombelico del mondo](posts/2026-06-20-ombelico-del-mondo.md)
 - [Prima iterazione](posts/2026-06-26-prima-iterazione.md)
+- [Piccolo è bello](posts/2026-06-27-piccolo-è-bello.md)
