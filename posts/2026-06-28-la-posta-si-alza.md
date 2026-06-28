@@ -3,7 +3,7 @@ layout: post
 title: "La posta si alza"
 ---
 
-Tutti abbiamo visto i grafici dell'effetto Dunning-Kruger, e forse ci hanno strappato anche un mezzo sorriso. 
+Tutti abbiamo visto i grafici dell'effetto Dunning-Kruger, e, forse, ci hanno anche strappato un mezzo sorriso. 
 
 Ben pochi, però, hanno imparato a non caderci: soprattutto quando si sono spinti oltre la loro comfort zone. 
 
@@ -40,6 +40,6 @@ Impacchettare questa function in un modulo MCP dedicato che in più avesse anche
 
 Del resto, per i nuovi sviluppi, avevo al mio fianco una lampada da strofinare e un genio quasi onnipotente, cosa poteva andar storto?
 
-Il problema, e lo imparai presto, è che i geni, a volte, si manifestano con il loro lato oscuro. 
+Il problema è che i geni, a volte, hanno anche un lato oscuro. 
 
 [← Torna all’Index](../index.md) · Post successivo → *in lavorazione*
