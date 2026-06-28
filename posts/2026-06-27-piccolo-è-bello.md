@@ -14,19 +14,23 @@ Beh, intanto il flusso logico delle operazioni a cui dedicherò il seguente diag
 ```mermaid
 flowchart TD
 
-    A[Text Input from client] --> B[Request Reader\n req.body.text]
+    A["Server\nuser → req"]
 
-    B --> C[IntentClassifier\nclassify text]
-    C --> D[ReportRouter\nget intent]
+    --> B["RequestReader\nreq.body → text"]
 
-    D --> E[ParamParser\nparse text, report]
+    B --> C["IntentClassifier\ntext → intent"]
 
-    E --> F[QueryBuilder\nbuild report_id, params]
-    F --> G[SQL Executor\nexecute sql, bindings]
+    C --> D["ReportRouter\nintent → reportType"]
 
-    G --> H[ResultFormatter\nformat rows, report]
+    D --> E["ParamParser\n(text, intent) → params"]
 
-    H --> I[JSON Output to client]
+    E --> F["QueryBuilder\n(reportType, params) → SQL"]
+
+    F --> G["SQLExecutor\nSQL → rows"]
+
+    G --> H["ResultFormatter\nrows → JSON"]
+
+    H --> I["Server\nJSON → user"]
 ```
 
 In pratica il server estraeva la proprietà text dal body della request, dopodiché entravano in gioco i vari moduli con questi ruoli:
