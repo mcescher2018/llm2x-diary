@@ -101,7 +101,7 @@ Semplice e "geniale" ma... c'è sempre da stare in guardia quando le cose sembra
 
 ---
 
-[← Torna all’Index](../index.md) · Post successivo → *in lavorazione*
+[← Torna all’Index](../index.md) · [Post successivo →](2026-06-28-la-posta-si-alza.md)
 
 
 

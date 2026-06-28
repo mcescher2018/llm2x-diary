@@ -23,3 +23,6 @@ Git Hub personale [MCEscher2018](https://github.com/mcescher2018).
 - [L'ombelico del mondo](posts/2026-06-20-ombelico-del-mondo.md)
 - [Prima iterazione](posts/2026-06-26-prima-iterazione.md)
 - [Piccolo è bello](posts/2026-06-27-piccolo-è-bello.md)
+- [La posta si alza](posts/2026-06-28-la-posta-si-alza.md)
+
+Nuovi post verranno aggiunti appena possbile.

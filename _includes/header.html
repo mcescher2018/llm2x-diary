@@ -1,3 +1,27 @@
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  document.querySelectorAll("code.language-mermaid").forEach((block) => {
+
+    const pre = block.parentElement;
+
+    const div = document.createElement("div");
+    div.className = "mermaid";
+    div.textContent = block.textContent;
+
+    pre.replaceWith(div);
+  });
+
+  mermaid.initialize({
+    startOnLoad: false
+  });
+
+  mermaid.run();
+});
+</script>
+
 <style>
 /* Code blocks più compatti e leggibili */
 pre, code {
@@ -24,4 +48,18 @@ code {
   padding: 0.1rem 0.3rem;
   border-radius: 4px;
 }
+
+/* Mermaid */
+.mermaid {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
 </style>
