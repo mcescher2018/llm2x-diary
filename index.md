@@ -24,5 +24,6 @@ Git Hub personale [MCEscher2018](https://github.com/mcescher2018).
 - [Prima iterazione](posts/2026-06-26-prima-iterazione.md)
 - [Piccolo è bello](posts/2026-06-27-piccolo-è-bello.md)
 - [La posta si alza](posts/2026-06-28-la-posta-si-alza.md)
+- [Grandi speranze](posts/2026-07-02-grandi-speranze.md)
 
 Nuovi post verranno aggiunti appena possbile.

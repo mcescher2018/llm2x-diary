@@ -14,26 +14,24 @@ Beh, intanto il flusso logico delle operazioni a cui dedicherò il seguente diag
 ```mermaid
 flowchart TD
 
-    A["Server\nuser → req"]
+    A["Server\nuser → req.body → text"]
 
-    --> B["RequestReader\nreq.body → text"]
+    --> B["IntentClassifier\ntext → intent"]
 
-    B --> C["IntentClassifier\ntext → intent"]
+    B --> C["ReportRouter\nintent → reportSpec"]
 
-    C --> D["ReportRouter\nintent → reportType"]
+    C --> D["ParamParser\n(text, intent) → params"]
 
-    D --> E["ParamParser\n(text, intent) → params"]
+    D --> E["QueryBuilder\n(reportSpec, params) → SQL"]
 
-    E --> F["QueryBuilder\n(reportType, params) → SQL"]
+    E --> F["SQLExecutor\nSQL → rows"]
 
-    F --> G["SQLExecutor\nSQL → rows"]
+    F --> G["ResultFormatter\nrows → JSON"]
 
-    G --> H["ResultFormatter\nrows → JSON"]
-
-    H --> I["Server\nJSON → user"]
+    G --> H["Server\nJSON → user"]
 ```
 
-In pratica il server estraeva la proprietà text dal body della request, dopodiché entravano in gioco i vari moduli con questi ruoli:
+In pratica, il server estraeva la proprietà text dal body della request, dopodiché entravano in gioco i vari moduli con questi ruoli:
 
 - intentClassifier: ricevere il testo e, chiamando Ollama, ritornare un intent fra quelli previsti, con un valore di confidenza o score;
 - reportRouter: arricchire l’etichetta del report di intent con un json di nomi di parametri, obbligatori e opzionali;
@@ -42,7 +40,7 @@ In pratica il server estraeva la proprietà text dal body della request, dopodic
 - sqlExecutor: inviare la query SQL al DB e ricevere il recordset di risposta;
 - reportFormatter: formattare il recordset come desiderato (in questo caso solo testo);
 
-La function `intentClassifier` funzionava attraverso un prompt per LLM idealmente blindato, tipo questo:
+La function `intentClassifier` era basata su prompt per LLM idealmente blindato, come questo:
 
 ```javascript
   const prompt = `
@@ -73,9 +71,23 @@ La function `intentClassifier` funzionava attraverso un prompt per LLM idealment
 
 Come immaginerete, il prompt faceva il suo lavoro spesso, ma non sempre.
 
+Il `reportRouter` produceva quello che è stato chiamato reportSpec, una rappresentazione piatta e hardcoded delle sue caratteristiche utili alla produzione della corrispondente query. Ecco un esempio:
+
+```javascript
+CustomerProductRank: {
+    report_id: "CustomerProductRank",
+    description: "Mostra i prodotti più ordinati da un cliente specifico",
+    required_params: ["customer_name"],
+    optional_params: ["limit"],
+    sql_template: null
+  },
+```
+
+Era, per certi versi, un AST estremamente semplificato; di AST ne riparleremo, comunque, nei post successivi.
+
 Le query erano scritte in Knex, di fatto per pura sperimentazione: l'unico DB previsto era SQLite, dunque la cosa più logica sarebbe stata utilizzare solo il suo "dialetto" di SQL.
 
-Avevano pochissimi elementi di variabilità, gestiti con placeholder estratti dal `paramParser`, anch'esso basato su una chiamata diretta LLM e prompt teoricamente "a prova di allucinazioni".
+Avevano pochissimi elementi di variabilità, gestiti con placeholder valorizzati dal `paramParser`, anch'esso basato su una chiamata diretta LLM e su un prompt teoricamente "a prova di allucinazioni".
 
 Il `queryBuilder` era una sequenza di IF tipo quello riportato:
 

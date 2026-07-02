@@ -42,4 +42,4 @@ Del resto, per i nuovi sviluppi, avevo al mio fianco una lampada da strofinare e
 
 Il problema è che i geni, a volte, hanno anche un lato oscuro. 
 
-[← Torna all’Index](../index.md) · Post successivo → *in lavorazione*
+[← Torna all’Index](../index.md) · [Post successivo →](2026-07-02-grandi-speranze.md)
