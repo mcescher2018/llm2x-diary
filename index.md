@@ -25,5 +25,6 @@ Git Hub personale [MCEscher2018](https://github.com/mcescher2018).
 - [Piccolo è bello](posts/2026-06-27-piccolo-è-bello.md)
 - [La posta si alza](posts/2026-06-28-la-posta-si-alza.md)
 - [Grandi speranze](posts/2026-07-02-grandi-speranze.md)
+- [A pugni con Tyson](posts/2026-07-03-a-pugni-con-tyson.md)
 
 Nuovi post verranno aggiunti appena possbile.

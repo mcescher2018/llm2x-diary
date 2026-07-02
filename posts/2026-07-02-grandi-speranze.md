@@ -5,7 +5,7 @@ title: "Grandi Speranze"
 
 La prima cosa che avevo pensato di aggiungere ad LLMREPORT è stata, dunque, un modulo MCP (Meta Control Protocol). 
 
-Questa parte, una volta scelto Node.js al posto dell'iniziale Python, non ha dato particolari problemi e lasciandomi quella che ancora è la mia definizione mentale di server MCP: "Un servizio HTTP che agisce per conto dell'LLM, che in effetti non può di per sè che fare una sola cosa: generare del testo".
+Questa parte, una volta scelto Node.js al posto dell'iniziale Python, non ha dato particolari problemi e mi ha lasciato la mia definizione personale di server MCP: "Un servizio HTTP che agisce per conto dell'LLM, che in pratica sa fare solo una cosa: generare testo".
 
 Niente di mistico, dunque, e nemmeno di troppo differente da una Web API tradizionale, se non per l'uso specifico che se ne faceva.
 
@@ -15,7 +15,7 @@ Ma era un po' poco, giusto?
 
 Così mi lanciai nella scrittura di una applicazione con questi obiettivi dichiarati:
 
-- supporto a client grafico e visualizzazione delle risposte generate dall'LLM in streaming token, ovvero una parola dopo l'altra;
+- supporto a client grafico e visualizzazione delle risposte generate dall'LLM in *streaming token*, ovvero una parola dopo l'altra;
 - passaggio ad intent più generici, che facessero capo ad una famiglia di report più che a report singoli;
 - aggiunta delle facoltà di comprensione dello schema in modo che, cambiando lo schema, cambiasse automaticamente l'SQL generato;
 
@@ -52,4 +52,4 @@ flowchart TD
 
 Aveva un solo problema: non funzionava neanche a pagarla ...
 
-[← Torna all’Index](../index.md) · Post successivo → *in lavorazione*
+[← Torna all’Index](../index.md) · [Post successivo →](2026-07-03-a-pugni-con-tyson.md)
