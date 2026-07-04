@@ -51,7 +51,7 @@ Come funzionava l'elaborazione dell'AST?
 
 Beh, dal messaggio in linguaggio naturale - eventualmente sfruttando i sinonimi - si estraeva il nome dell'entità e successivamente si costruiva il suo albero di proprietà più o meno annidate. 
 
-Ecco il pezzo di codice in cui l'entità veniva riconosciuta:
+Ecco la parte di codice in cui l'entità veniva riconosciuta:
 
 ```javascript
 export function detectEntity(text) {
@@ -74,7 +74,7 @@ export function detectEntity(text) {
 }
 ```
 
-In sostanza, a partire dal messaggio, si estraeva un semantic intent che consisteva nella label dell'intento utente più la rappresentazione delle entità coinvolte e dei loro legami:
+In sostanza, a partire dal messaggio, si estraeva un *semantic intent* che consisteva nella label dell'intento utente più la rappresentazione delle entità coinvolte e dei loro legami:
 
 ```javascript
 const entity = detectEntity(t);
@@ -88,7 +88,7 @@ if (entity) {
 
 Sì, lo so, sarebbe stato meglio avere un middleware in più, perchè qui si tentava di colmare lo scalino linguaggio naturale -> linguaggio artificiale in un solo colpo. 
 
-Ma l'impressione è che non sarebbe bastato, e il successivo codice dell'SQL Builder, lo illustra molto bene.
+Ma l'impressione è che non sarebbe bastato, e il successivo codice dell'SQL Builder credo lo illustri molto bene.
 
 *Nota: il codice seguente è solo un estratto, riportato per mostrare la complessità della logica, non per analizzarne ogni dettaglio.*
 
@@ -185,4 +185,4 @@ Il genio mi aveva portato a confrontarmi con un obiettivo semplicemente troppo a
 
 Come sfidare Tyson in una scazzottata e pretendere di vincere, appunto.
 
-[← Torna all’Index](../index.md) · Post successivo → *in lavorazione*
+[← Torna all’Index](../index.md) · [Post successivo →](2026-07-04-regex-o-non-regex.md)
