@@ -122,4 +122,4 @@ Rimaneva, appunto, la parte del parsing del linguaggio naturale.
 
 Ma lì la soluzione doveva essere ancora più drastica, come vedremo meglio più avanti.
 
-[← Torna all’Index](../index.md) · Post successivo → *in lavorazione*
+[← Torna all’Index](../index.md) · [Post successivo →](2026-07-09-approfondimento-embedding-part1.md)
