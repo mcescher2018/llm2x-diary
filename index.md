@@ -27,6 +27,7 @@ Git Hub personale [MCEscher2018](https://github.com/mcescher2018).
 - [Grandi speranze](posts/2026-07-02-grandi-speranze.md)
 - [A pugni con Tyson](posts/2026-07-03-a-pugni-con-tyson.md)
 - [Regex o non regex](posts/2026-07-04-regex-o-non-regex.md)
-- [Approfondimento sugli embedding, parte 1](posts/2026-07-09-approfondimento-embedding-part1.md)
+- [Approfondimento embedding - pt.1](posts/2026-07-09-approfondimento-embedding-part1.md)
+- [Approfondimento embedding - pt.2](posts/2026-07-10-approfondimento-embedding-part2.md)
 
 Nuovi post verranno aggiunti appena possbile.

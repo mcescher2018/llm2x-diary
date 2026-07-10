@@ -74,30 +74,45 @@ Che cos'è l'*encoder* che abbiamo costruito? È appunto una rete neurale che si
 
 La parte principale della trasformazione del vettore di input la fanno i suoi hidden layers.
 
-Il primo di questi è proprio di tipo `Embedding`: non è un insieme di neuroni nel senso classico (sommatori a soglia collegati da archi con pesi, le cosiddette sinapsi), ma solo una matrice di parametri, in questo caso 10000*128. 
+Il primo di questi è proprio di tipo `Embedding`: non è un insieme di neuroni nel senso classico (sommatori a soglia collegati da archi con pesi, le cosiddette sinapsi), ma solo una matrice di parametri, in questo caso `10000*128`. 
 
 Di queste 10000 posizioni in pratica ne saranno usate solo tante quante sono le parole distinte del training set, ordinandole per frequenza. 
 
-Verrà calcolato un vettore per ogni parola, quindi, "Dammi gli ordini" diventerà ad esempio [15,6,121] e l'uscita x di tale layer sarà un elenco di vettori siffatti:
+Verrà calcolato un vettore per ogni parola e, ad esempio, la frase “Dammi gli ordini” verrà convertita dal tokenizer in una sequenza di indici, ad esempio [15, 6, 121], che viene poi *padded* a lunghezza 32:
+
+```text
+[0, 0, ..., 0, 15, 6, 121]
+``` 
+
+L’Embedding layer trasformerà ciascun indice in un vettore di dimensione 128, producendo una matrice `32×128`.
+Le ultime tre righe della matrice corrisponderanno ai vettori delle parole “dammi”, “gli” e “ordini”:
 
 ``` text
-embedding[15] = [0.12, -0.33, 0.88, ...]
-embedding[6] = [-0.44, 0.02, 0.11, ...]
-embedding[121] = [0.09, 0.55, -0.21, ...]
+token_embedding[15]  = [0.12, -0.33, 0.88, ...]
+token_embedding[6]   = [-0.44, 0.02, 0.11, ...]
+token_embedding[121] = [0.09, 0.55, -0.21, ...]
 ```
 
-Il `GlobalAveragePooling1D` chiamato nel secondo strato interno del modello calcola la media dei vettori parola lungo la sequenza.
+Il `GlobalAveragePooling1D` chiamato nel secondo strato interno del modello calcolerà la media dei vettori parola lungo la sequenza.
 
 Il suo risultato, quindi, non avrà più lunghezza MAX_LEN, ma EMB_DIM: sarà un singolo vettore che rappresenta l’intera frase.
 
-Il `Dense` dell'ultimo layer interno, assocerà al vettore di sopra a 128 dimensioni un vettore a 256 dimensioni con una trasformazione lineare, anche qui con pesi che corrispondono a gradi di libertà. 
+Ad esempio, la frase “Dammi gli ordini” potrebbe produrre un embedding di questo tipo:
+
+``` text
+sentence_embedding = [0.031, -0.112, 0.087, 0.044, ...]   # 128 dimensioni
+```
+
+Questo vettore è la rappresentazione numerica della frase, che verrà poi trasformata dal layer Dense in un vettore finale a 256 dimensioni e normalizzata tramite l2_normalize.
+
+Quindi, il `Dense` dell'ultimo layer interno, assocerà al vettore di sopra a 128 dimensioni un vettore a 256 dimensioni con una trasformazione lineare, anche qui con pesi che corrispondono a gradi di libertà. 
 
 La `l2_normalize` utilizzata per l'output è una semplice funzione matematica che scala il vettore in modo che la sua norma sia 1.
 
-Ciò rende la *cosine similarity* che sarà impiegata per valutare le distanze, equivalente a un prodotto scalare: una misura di allineamento tra vettori, non una distanza geometrica.
+Ciò renderà la *cosine similarity*, successivamente impiegata per valutare le distanze, equivalente a un prodotto scalare: una misura di allineamento tra vettori, non una distanza geometrica.
 
 Questo è tutto sulla topologia dell'encoder. 
 
 Il post successivo parlerà del suo addestramento.
 
-[← Torna all’Index](../index.md) · Post successivo → *in lavorazione*
+[← Torna all’Index](../index.md) [Post successivo →](2026-07-10-approfondimento-embedding-part2.md)
