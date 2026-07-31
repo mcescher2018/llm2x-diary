@@ -29,5 +29,6 @@ Git Hub personale [MCEscher2018](https://github.com/mcescher2018).
 - [Regex o non regex](posts/2026-07-04-regex-o-non-regex.md)
 - [Approfondimento embedding - pt.1](posts/2026-07-09-approfondimento-embedding-part1.md)
 - [Approfondimento embedding - pt.2](posts/2026-07-10-approfondimento-embedding-part2.md)
+- [Deterministico, anche troppo](posts/2026-07-31-deterministico-anche-troppo.md)
 
 Nuovi post verranno aggiunti appena possbile.

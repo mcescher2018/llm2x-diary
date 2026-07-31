@@ -115,4 +115,4 @@ Questo è tutto sulla topologia dell'encoder.
 
 Il post successivo parlerà del suo addestramento.
 
-[← Torna all’Index](../index.md) [Post successivo →](2026-07-10-approfondimento-embedding-part2.md)
+[← Torna all’Index](../index.md) · [Post successivo →](2026-07-10-approfondimento-embedding-part2.md)

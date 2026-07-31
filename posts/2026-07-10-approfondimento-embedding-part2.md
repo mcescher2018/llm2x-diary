@@ -164,4 +164,4 @@ E quanto spiegato sopra è un percorso a sé, perché un *embedding* serio usa m
 
 Digressione finita ... pronti per ripartire con il cuore di LLMSQLPROD?
 
-[← Torna all’Index](../index.md) · Post successivo → *in lavorazione*
+[← Torna all’Index](../index.md) · [Post successivo →](2026-07-31-deterministico-anche-troppo.md)
