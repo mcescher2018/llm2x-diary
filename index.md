@@ -6,14 +6,14 @@ title: "LLM2X-Diary"
 # LLM2X-Diary
 
 Diario tecnico dedicato alle pipeline LLM‑to‑X, partendo da LLM2SQL.  
-Una raccolta di appunti, esperimenti, trade‑off, errori e lesson learned emersi lavorando su architetture deterministiche basate su LLM.
+Una raccolta di appunti, esperimenti, trade‑off, errori e *lessons learned* emersi lavorando su architetture deterministiche basate su LLM.
 
 Questo non è un manuale, non è documentazione ufficiale e non è un prodotto.  
 È un percorso di lavoro: note veloci, riflessioni architetturali, idee che funzionano e idee che non funzionano.
 
 Il progetto principale a cui questo diario si riferisce è [LLMSQLPROD](https://github.com/mcescher2018/LLMSQLPROD).
 
-Git Hub personale [MCEscher2018](https://github.com/mcescher2018).
+GitHub personale [MCEscher2018](https://github.com/mcescher2018).
 
 ## Post
 
@@ -30,5 +30,6 @@ Git Hub personale [MCEscher2018](https://github.com/mcescher2018).
 - [Approfondimento embedding - pt.1](posts/2026-07-09-approfondimento-embedding-part1.md)
 - [Approfondimento embedding - pt.2](posts/2026-07-10-approfondimento-embedding-part2.md)
 - [Deterministico, anche troppo](posts/2026-07-31-deterministico-anche-troppo.md)
+- [Ritorno agli SQL templates](posts/2026-08-06-ritorno-agli-sql-templates.md)
 
 Nuovi post verranno aggiunti appena possbile.

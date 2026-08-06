@@ -36,6 +36,4 @@ L'ultima parte era un po' la vera novità e fu una cosa che il solito genio mi p
 
 Un sacco di nuove *lessons learned*, ma un altro bagno di sangue.
 
-[← Torna all’Index](../index.md) · Post successivo → *in lavorazione*
-
-
+[← Torna all’Index](../index.md) · [Post successivo →](2026-08-06-ritorno-agli-sql-templates.md)
