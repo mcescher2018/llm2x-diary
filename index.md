@@ -31,5 +31,7 @@ GitHub personale [MCEscher2018](https://github.com/mcescher2018).
 - [Approfondimento embedding - pt.2](posts/2026-07-10-approfondimento-embedding-part2.md)
 - [Deterministico, anche troppo](posts/2026-07-31-deterministico-anche-troppo.md)
 - [Ritorno agli SQL templates](posts/2026-08-06-ritorno-agli-sql-templates.md)
+- [Gestire la conversazione](posts/2026-08-07-gestire-la-conversazione.md)
 
-Nuovi post verranno aggiunti appena possbile.
+Il diario è quasi alla fine.
+I prossimi post a breve.

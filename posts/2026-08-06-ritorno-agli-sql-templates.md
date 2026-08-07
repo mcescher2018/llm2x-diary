@@ -72,4 +72,4 @@ Perché, è ovvio, proprio questa percentuale era il principale parametro di qua
 
 Quello che, fra l’altro, ha spostato la mia decisione dal tenere tutto in locale al parlarne in questo blog.
 
-[← Torna all’Index](../index.md) · Post successivo → *in lavorazione*
+[← Torna all’Index](../index.md) · [Post successivo →](2026-08-07-gestire-la-conversazione.md)
