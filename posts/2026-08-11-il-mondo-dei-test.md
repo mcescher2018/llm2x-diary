@@ -9,16 +9,16 @@ L'esperienza personale mi ha portato a diffidare dei test automatizzati a livell
 
 E il parere, altrettanto personale, è che possono essere utili ma vanno usati con consapevolezza.
 
-La loro debolezza principale, secondo me, è legata a due aspetti.
+Assocerei loro debolezza in particolare a due aspetti.
 
-Da un lato, tipicamente, si devono mockare alcune funzioni e quindi non possono riprodurre il vero scenario reale. Può essere anche un aspetto positivo (la famosa atomicità degli *unit test*) ma deve essere chiaro che stiamo facendo amichevoli pre-campionato, non scontri di playoff.
+Da un lato, solitamente, si devono mockare alcune funzioni e quindi non possono riprodurre il vero scenario reale. Può essere anche un aspetto positivo (la famosa atomicità degli *unit test*) ma deve essere chiaro che stiamo facendo amichevoli pre-campionato, non scontri di playoff.
 
 Dall'altro tendono a invecchiare molto presto, specie se gli scenari che testano non vengono aggiornati. Esempio classico: l'inserimento di un nuovo ordine in un esercizio che nel frattempo è stato chiuso.
 
-A dire il vero i test hanno anche dei grossi pregi: permettono di controllare parti specifiche dell'applicazione quando questa non è ancora completa e, allo stesso modo, consentono facilmente di controllare il comportamento dell'applicazione in presenza di variazioni intorno ad un dato di base. Una cosa che, nel contesto di questa applicazione (che deve rispondere allo stesso modo a input tipo "Dammi il fatturato", "Voglio il fatturato", "Mostrami il totale del venduto" etc...) è decisiva.
+A dire il vero i test hanno anche dei grossi pregi: permettono di controllare parti specifiche del codice quando questo non è ancora completo e, allo stesso modo, consentono di valutare il comportamento del software in presenza di variazioni intorno ad un dato di base. Una cosa che, nel contesto di questa applicazione (che deve rispondere allo stesso modo a input tipo "Dammi il fatturato", "Voglio il fatturato", "Mostrami il totale del venduto" etc...), è decisiva.
 
-Dunque, accanto a Backend e Frontend, ho inserito nell'albero del progetto una sezione per i test (automatizzati) del Backend.
-I test utente li ho invece eseguiti interagendo manualmente con l'applicazione attraverso la finestra del browser. 
+Dunque, accanto a Backend e Frontend, ho inserito, nell'albero del progetto, una sezione per i test (automatizzati) del Backend.
+I test utente, invece, sono stati eseguiti interagendo manualmente con la UI attraverso la finestra del browser. 
 
 La cartella "test_backend" ha questa struttura:
 
@@ -37,9 +37,9 @@ La cartella "test_backend" ha questa struttura:
     └── utils_e2e.js
 ```
 
-I file nella sezione basic sono di tipo puntuale. 
+I file nella sezione "basic" sono di tipo puntuale. 
 
-Per eseguirli è sufficiente scrivere da linea di comando una istruzione di questo tipo:
+Per eseguirli, è sufficiente scrivere da linea di comando una istruzione di questo tipo:
 
 ```bash
 $ node test_embedding.js
@@ -57,7 +57,7 @@ Unico prerequisito, qui, è la presenza del servizio Ollama, attivo e running.
 
 Il test_embedding sopra riportato è proprio il più semplice (e meno significativo). 
 
-Per tutti gli altri una volta lanciati viene visualizzato a schermo il log dell'applicazione, con alla fine un riepilogo dei risultati, ad esempio:
+Per tutti gli altri, una volta lanciati, viene visualizzato a schermo il log dell'applicazione, con alla fine un riepilogo dei risultati, ad esempio:
 
 ```bash
 $ node test_router.js
@@ -70,9 +70,11 @@ $ node test_router.js
 
 Tutti questi file `test_*.js` contengono al loro interno, insieme alla logica per eseguirli e valutarne il successo, i prompt con cui il sistema viene testato.
 
-Questi possono essere utili anche come spunto per inviare input uguali o simili al sistema *live*, verificando che si comporti come atteso.
+Gli stessi, quindi, possono essere utili anche come spunto per inviare input uguali o simili al sistema in modalità *live*, verificando che si comporti come atteso.
 
-Ciò è particolarmente vero per i test e2e, abbreviazione di End-To-End, chiamata così perché interagisce realmente con il backend dell'applicazione. 
+Ciò è particolarmente vero per i test "e2e".
+
+Qui la sigla è l'abbreviazione di End-To-End, ed il nome è stato assegnato perché l'interazione con il backend avviene esattamente come nello scenario di produzione.
 
 In questo caso, oltre ad Ollama, anche il server.js deve essere avviato. 
 
@@ -171,9 +173,9 @@ System Response: {
 ========================================
 ```
 
-Notare che per questi test niente è stato mockato: le risposte e il codice SQL generati provengono dall’ambiente reale. 
+Notare che, per questi ultimi test, niente è stato mockato: le risposte e il codice SQL generati provengono dall’ambiente reale. 
 
-Chiaramente, è stato possibile solo perché questa applicazione interroga semplicemente: non scrive dati nel DB o nel filesystem.
+Ciò è stato possibile solo perché LLMSQLPROD interroga semplicemente; non scrive dati in qualche DB o nel filesystem.
 
 Nel corso di questo post, una buona parte degli *snippet* riportati contiene log che, insieme alla logica, sono la colonna portante di un buon sistema di test o debug.
 
