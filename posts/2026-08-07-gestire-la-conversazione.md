@@ -92,7 +92,7 @@ Ecco, quindi, che scatta una richiesta di chiarimento come nei casi precedenti, 
 
 Ma come fa il sistema a capire che manca un parametro obbligatorio? 
 
-Lo ricava da un file di semantica, i parametri per intent, che nell'esempio in questione sarebbe utilizzato in questa sezione:
+Lo ricava da un file di semantica, i parametri per intent, che nell'esempio in questione sarebbe utilizzato in questa parte:
 
 ```javascript
 [INTENTS.SALES_BY_DIMENSION]: {
@@ -102,7 +102,7 @@ Lo ricava da un file di semantica, i parametri per intent, che nell'esempio in q
 }
 ```
 
-Tutto questo, direttamente o attraverso sinonimi, con la dimensione che deve essere una di quelle previste dal *semantic model*.
+Tutto ciò, direttamente o attraverso sinonimi, con la dimensione che deve essere una di quelle previste dal *semantic model*.
 
 L'aggiunta del supporto conversazionale mi ha costretto a scrivere molto nuovo codice.
 

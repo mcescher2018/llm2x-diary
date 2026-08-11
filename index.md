@@ -32,6 +32,7 @@ GitHub personale [MCEscher2018](https://github.com/mcescher2018).
 - [Deterministico, anche troppo](posts/2026-07-31-deterministico-anche-troppo.md)
 - [Ritorno agli SQL templates](posts/2026-08-06-ritorno-agli-sql-templates.md)
 - [Gestire la conversazione](posts/2026-08-07-gestire-la-conversazione.md)
+- [Il mondo dei test](posts/2026-08-11-il-mondo-dei-test.md)
 
 Il diario è quasi alla fine.
-I prossimi post a breve.
+Gli ultimi post a breve.
