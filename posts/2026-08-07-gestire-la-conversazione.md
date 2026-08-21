@@ -110,4 +110,4 @@ Inizialmente dentro il router e poi in vari file accessori, corrispondenti a fas
 
 Un *refactoring* cui ha contribuito anche l'insieme delle correzioni suggerite dai test, che vedremo con il prossimo post.
 
-[← Torna all’Index](../index.md) · Post successivo → *in lavorazione*
+[← Torna all’Index](../index.md) · [Post successivo →](2026-08-11-il-mondo-dei-test.md)

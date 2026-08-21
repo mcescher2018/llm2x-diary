@@ -181,4 +181,4 @@ Nel corso di questo post, una buona parte degli *snippet* riportati contiene log
 
 È proprio ai log che dedicheremo il prossimo pezzo.
 
-[← Torna all’Index](../index.md) · Post successivo → *in lavorazione*
+[← Torna all’Index](../index.md) · [Post successivo →](2026-08-21-uno-sguardo-ai-log.md)

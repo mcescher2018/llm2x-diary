@@ -33,6 +33,7 @@ GitHub personale [MCEscher2018](https://github.com/mcescher2018).
 - [Ritorno agli SQL templates](posts/2026-08-06-ritorno-agli-sql-templates.md)
 - [Gestire la conversazione](posts/2026-08-07-gestire-la-conversazione.md)
 - [Il mondo dei test](posts/2026-08-11-il-mondo-dei-test.md)
+- [Uno sguardo ai log](posts/2026-08-21-uno-sguardo-ai-log.md)
 
 Il diario è quasi alla fine.
 Gli ultimi post a breve.
